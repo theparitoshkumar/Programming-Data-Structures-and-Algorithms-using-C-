@@ -1,0 +1,19 @@
+Adding a project to GitHub with GitHub CLI
+GitHub CLI is an open source tool for using GitHub from your computer's command line. GitHub CLI can simplify the process of adding an existing project to GitHub using the command line. To learn more about GitHub CLI, see "About GitHub CLI."
+
+In the command line, navigate to the root directory of your project.
+
+Initialize the local directory as a Git repository.
+
+git init -b main
+To create a repository for your project on GitHub, use the gh repo create subcommand. Replace project-name with the desired name for your repository. If you want your project to belong to an organization instead of to your user account, specify the organization name and project name with organization-name/project-name.
+
+gh repo create project-name
+Follow the interactive prompts. Alternatively, you can specify arguments to skip these prompts. For more information about possible arguments, see the GitHub CLI manual.
+
+Pull changes from the new repository that you created. (If you created a .gitignore or LICENSE file in the previous step, this will pull those changes to your local directory.)
+
+git pull --set-upstream origin main
+Stage, commit, and push all of the files in your project.
+
+git add . && git commit -m "initial commit" && git push
