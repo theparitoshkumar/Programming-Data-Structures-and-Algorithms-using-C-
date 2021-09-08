@@ -28,9 +28,9 @@ using namespace std;
 int main()
 {
 
-    int num;
-    cout<<"Enter the length of the star in one quadrant\n";
-    cin>>num;
+    int num = 7;
+    //cout<<"Enter the length of the star in one quadrant\n";
+    //cin>>num;
 
     //for upper quadrants
     for(int i = 1; i <= num; i++)
